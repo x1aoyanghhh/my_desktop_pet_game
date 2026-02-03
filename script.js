@@ -2,15 +2,6 @@ const cat = document.querySelector(".cat");
 const desktop = document.querySelector(".desktop");
 const doc = document.querySelector(".doc");
 const taskbar = document.querySelector(".taskbar");
-
-const positions = [
-  { x: 140, y: 420, label: "taskbar" },
-  { x: 220, y: 180, label: "doc" },
-  { x: 520, y: 190, label: "doc" },
-  { x: 720, y: 420, label: "taskbar" },
-];
-
-let currentIndex = 0;
 let isJumping = false;
 
 function moveCat(targetX, targetY) {
@@ -39,14 +30,6 @@ function moveCat(targetX, targetY) {
 
   requestAnimationFrame(animate);
 }
-
-function loopJump() {
-  const target = positions[currentIndex];
-  moveCat(target.x, target.y);
-  currentIndex = (currentIndex + 1) % positions.length;
-}
-
-setInterval(loopJump, 2400);
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);

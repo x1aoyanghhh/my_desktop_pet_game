@@ -10,20 +10,15 @@
 body {
   margin: 0;
   background: #0e1726;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .desktop {
   position: relative;
-  width: min(1200px, 95vw);
-  height: min(720px, 90vh);
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(135deg, #0d1b3d 0%, #22336a 45%, #162042 100%);
-  border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 30px 80px rgba(4, 15, 34, 0.65);
 }
 
 .workspace {
