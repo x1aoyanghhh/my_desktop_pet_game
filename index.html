@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>桌面小猫原型</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="desktop">
+      <section class="workspace">
+        <article class="doc" aria-label="Word 文档">
+          <header>
+            <h1>正在编辑：日报.docx</h1>
+            <p>这里是假装的文档内容，小猫会在上面磨爪子。</p>
+          </header>
+          <div class="scratch-marks" aria-hidden="true"></div>
+        </article>
+      </section>
+      <div class="taskbar" aria-label="任务栏">
+        <span>开始</span>
+        <div class="task-icons">
+          <span>📁</span>
+          <span>🌐</span>
+          <span>📝</span>
+        </div>
+        <time>14:00</time>
+      </div>
+      <div class="cat" role="img" aria-label="正在跳跃的小猫">
+        <span class="cat-emoji">🐱</span>
+        <span class="cat-shadow"></span>
+      </div>
+      <div class="hint">
+        <h2>交互提示</h2>
+        <ul>
+          <li>小猫会在任务栏和文档之间跳跃。</li>
+          <li>点击桌面任意位置，小猫会朝点击方向跳。</li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
